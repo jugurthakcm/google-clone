@@ -7,8 +7,11 @@ function App() {
     <div className='app'>
       <Router>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <Home />
+          </Route>
+          <Route path='/search'>
+            <div>SKLKS</div>
           </Route>
         </Switch>
       </Router>
