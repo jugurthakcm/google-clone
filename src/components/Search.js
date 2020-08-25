@@ -8,15 +8,15 @@ import { useStateValue } from '../StateProvider';
 import { actionTypes } from '../reducer';
 
 function Search({ hideButtons }) {
-  const [dispatch] = useStateValue();
+  const [term, dispatch] = useStateValue();
 
   const [input, setInput] = useState('');
   const history = useHistory();
 
   const search = (e) => {
     e.preventDefault();
-    history.push('/search');
     dispatch({ type: actionTypes.SET_SEARCH_TERM, term: input });
+    history.push('/search');
   };
 
   return (
