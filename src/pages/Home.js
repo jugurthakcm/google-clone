@@ -6,6 +6,7 @@ import { Avatar } from '@material-ui/core';
 import Search from '../components/Search';
 
 const Home = () => {
+  console.log(process.env.REACT_APP_API_KEY);
   return (
     <div className='home'>
       <div className='home__header'>
