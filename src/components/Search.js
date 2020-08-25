@@ -8,7 +8,7 @@ import { useStateValue } from '../StateProvider';
 import { actionTypes } from '../reducer';
 
 function Search({ hideButtons }) {
-  const [h, dispatch] = useStateValue();
+  const [initialState, dispatch] = useStateValue();
 
   const [input, setInput] = useState('');
   const history = useHistory();
