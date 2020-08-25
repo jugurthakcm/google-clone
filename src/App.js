@@ -11,7 +11,7 @@ function App() {
             <Home />
           </Route>
           <Route path='/search'>
-            <div>SKLKS</div>
+            <div>This is the search page</div>
           </Route>
         </Switch>
       </Router>
