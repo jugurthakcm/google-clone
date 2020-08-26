@@ -1,8 +1,8 @@
 import React from 'react';
 import './SearchPage.css';
-import { useStateValue } from '../StateProvider';
-import useGoogleSearch from '../useGoogleSearch';
-import response from '../response';
+import { useStateValue } from '../data/StateProvider';
+import useGoogleSearch from '../data/useGoogleSearch';
+import response from '../data/response';
 import { Link } from 'react-router-dom';
 import Search from '../components/Search';
 
